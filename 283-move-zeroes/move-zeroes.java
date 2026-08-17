@@ -13,7 +13,8 @@ class Solution {
             }
         }
         for(int i = 0 ; i < count; i++){
-            arr[x++] = 0;
+            ++x;
+            arr[x - 1] = 0;
         }
         x=0;
         for(int ele : arr) nums[x++]=ele;
