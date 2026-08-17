@@ -12,11 +12,12 @@ class Solution {
                 x++;
             }
         }
-        for(int i = 0 ; i < count; i++){
-           
+        while(count>0){
             arr[x] = 0;
             x++;
+            count--;
         }
+        
         x=0;
         for(int ele : arr) nums[x++]=ele;
     }
